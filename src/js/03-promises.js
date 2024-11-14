@@ -6,3 +6,12 @@ function createPromise(position, delay) {
     // Reject
   }
 }
+
+const formWrapper = document.querySelector('.form');
+
+const onSubmitHandle = (e) => {
+  e.preventDefault;
+  console.dir(e.target);
+};
+
+formWrapper.addEventListener('submit', onSubmitHandle)

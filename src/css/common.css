@@ -103,3 +103,68 @@ input#datetime-picker {
     height: 100vh;
     margin: 0;
 }
+/* 
+Style for 3 task */
+form {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+  
+}
+
+form label {
+  font-size: 16px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+
+form input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+/* Стилі для кнопки */
+form button {
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Додатковий стиль для адаптивності */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
